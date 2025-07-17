@@ -41,6 +41,7 @@ export default function BlogDisplay() {
   );
 }
 
+
 const styles = {
   container: (isDark) => ({
     minHeight: '100vh',
@@ -76,3 +77,13 @@ const styles = {
     height: '200px'
   }
 };
+
+const themeStyles = (isDark) => ({
+  pageBg: isDark ? '#121212' : '#f9f9f9',
+  text: isDark ? '#ffffff' : '#1a1a1a',
+  cardBg: isDark ? '#1e1e1e' : '#ffffff',
+  shadow: isDark ? '0 4px 10px rgba(0,0,0,0.4)' : '0 4px 10px rgba(0,0,0,0.1)',
+  border: isDark ? '1px solid #333' : '1px solid #ddd',
+  primary: isDark ? '#0070f3' : '#0070f3'
+});
+
